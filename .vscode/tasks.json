@@ -9,6 +9,15 @@
 			"label": "npm: run dev",
 			"detail": "next dev",
 			"path": "${workspaceFolder}"
+		},
+		{
+			"type": "npm",
+			"script": "twwatch",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: run twwatch",
+			"detail": "tailwind watch",
+			"path": "${workspaceFolder}"
 		}
 	]
 }
