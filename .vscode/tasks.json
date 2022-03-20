@@ -6,7 +6,7 @@
 			"script": "dev",
 			"group": "build",
 			"problemMatcher": [],
-			"label": "npm: run dev",
+			"label": "run dev",
 			"detail": "next dev",
 			"path": "${workspaceFolder}"
 		},
@@ -15,9 +15,20 @@
 			"script": "twwatch",
 			"group": "build",
 			"problemMatcher": [],
-			"label": "npm: run twwatch",
+			"label": "run twwatch",
 			"detail": "tailwind watch",
-			"path": "${workspaceFolder}"
+			"path": "${workspaceFolder}",
+		},
+		{
+			"type": "shell",
+			"label": "run local",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "tailwind watch",
+			"dependsOn":[
+				"run dev",
+				"run twwatch"
+			]
 		}
 	]
 }

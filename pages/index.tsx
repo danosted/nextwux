@@ -3,7 +3,7 @@ import { ArrowCircleDownIcon } from '@heroicons/react/outline'
 const Home: NextPage = () => {
   return (
     <div className="flex flex-wrap items-center justify-center h-full w-full bg-slate-700">
-      <div className="basis-full md:flex-initial">
+      <div className="basis-auto">
 
         <h1 className="text-8xl text-emerald-300 ">
           Hej Thorbjørn
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         </code>
 
       </div>
-      <div className='basis-full md:flex-initial text-8xl animate-bounce'>😁</div>
+      <div className='basis-auto text-8xl animate-bounce'>😁</div>
       <div className="absolute bottom-0">
         <ArrowCircleDownIcon className='h-8 w-8 animate-bounce' />
       </div>
