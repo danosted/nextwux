@@ -8,7 +8,10 @@
 			"problemMatcher": [],
 			"label": "run dev",
 			"detail": "next dev",
-			"path": "${workspaceFolder}"
+			"path": "${workspaceFolder}",
+			"dependsOn": [
+				"npm install"
+			]
 		},
 		{
 			"type": "npm",
@@ -25,10 +28,18 @@
 			"group": "build",
 			"problemMatcher": [],
 			"detail": "tailwind watch",
-			"dependsOn":[
+			"dependsOn": [
 				"run dev",
 				"run twwatch"
 			]
+		},
+		{
+			"type": "npm",
+			"script": "install",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm install",
+			"detail": "npm install"
 		}
 	]
 }

@@ -1,5 +1,7 @@
-import type { NextPage } from 'next'
-import { ArrowCircleDownIcon } from '@heroicons/react/outline'
+import type { NextPage } from 'next';
+import { ArrowCircleDownIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
+
 const Home: NextPage = () => {
   return (
     <div className="flex flex-wrap items-center justify-center h-full w-full bg-slate-700">
@@ -8,10 +10,9 @@ const Home: NextPage = () => {
         <h1 className="text-8xl text-emerald-300 ">
           Hej Thorbjørn
         </h1>
-        <code>
-          Here is some code:
-
-        </code>
+        <Link href={'/chaos'} passHref>
+          <a>CHAOS</a>
+        </Link>
 
       </div>
       <div className='basis-auto text-8xl animate-bounce'>😁</div>
